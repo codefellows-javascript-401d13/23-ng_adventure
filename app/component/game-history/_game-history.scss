@@ -1,0 +1,10 @@
+@import "../../scss/lib/theme/vars";
+
+.history {
+  position: absolute;
+  display: inline-block;
+  left: 35%;
+  top: 10vw;
+  width: 30%;
+  margin: $gutter;
+}
