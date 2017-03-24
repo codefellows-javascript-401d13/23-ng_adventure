@@ -11,10 +11,10 @@ function mapService($log) {
   let service = {};
 
   service.mapData = {
-    hall: {
+    Hall: {
       desc: 'There is a door to the right and left.',
       left: 'greenhouse',
-      right: 'kitchen'
+      right: 'kitchen',
     },
     greenhouse: {
       desc: 'There is a door to the right, stairs going up and a secret passage.',
@@ -49,7 +49,7 @@ function mapService($log) {
     bedroom: {
       desc: 'There is a door to the right, stairs going down and a secret passage.',
       right: 'nursery',
-      downstairs: 'gamerooom',
+      downstairs: 'gameroom',
       secretpassage: 'kitchen'
     },
     nursery: {

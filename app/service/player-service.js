@@ -13,7 +13,8 @@ function playerService($q, $log, mapService) {
   let turn = 0;
   let player = service.player = {
     name: 'Gary',
-    location: 'Hall'
+    location: 'Hall',
+    hp: 16
   };
 
   let history = service.history = [

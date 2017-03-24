@@ -15,6 +15,7 @@ function GamePadController($log, playerService) {
   $log.debug('GamePadController');
 
   this.directions = ['upstairs', 'downstairs', 'left', 'right', 'secretpassage'];
+  $log.debug('directions', this.directions);
   this.moveDirection = this.directions[0];
 
   this.movePlayer = function() {
