@@ -11,25 +11,26 @@ function mapService($log){
   let service = {};
 
   service.mapData = {
-      street1: {
+      emptyStreet: {
         desc: 'message from the street',
-        down: 'sewer pub'
+        down: 'pub'
       },
       pub: {
         desc: 'message from the pub',
         north: 'sewer gym',
-        east: 'fortuneTeller'
+        east: 'fortuneTeller',
+        up: 'emptyStreet'
       },
       gym: {
         desc: 'message from the gym',
         south: 'sewer pub',
-        east: 'sewer dentist'
+        east: 'dentist'
       },
       dentist: {
         desc: 'message from the rat dentist',
         west: 'rat gym',
         north: 'pawn shop',
-        up: 'street dumpster'
+        up: 'dumpster'
       },
       pawnShop: {
         desc: 'message from rat pawn shop',
