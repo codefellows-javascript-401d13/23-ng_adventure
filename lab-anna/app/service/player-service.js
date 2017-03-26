@@ -14,7 +14,9 @@ function playerService($q, $log, mapService) {
   let player = service.player = {
     name: 'spider',
     location: 'web',
-    hp: 16
+    hp: 16,
+    x: mapService.mapData['web'].x,
+    y: mapService.mapData['web'].y,
   };
 
   let history = service.history = [
@@ -41,7 +43,7 @@ function playerService($q, $log, mapService) {
           hp: player.hp
         });
         return reject('Cannot go in that direction');
-      };
+      }
 
       history.unshift({
         turn,
@@ -51,6 +53,8 @@ function playerService($q, $log, mapService) {
       });
 
       player.location = newLocation;
+      player.x = mapService.mapData[newLocation].x;
+      player.y = mapService.mapData[newLocation].y;
       return resolve(player.location);
     });
   };

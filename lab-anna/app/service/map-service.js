@@ -13,7 +13,7 @@ function mapService($log) {
     web: {
       desc: "Wake up sleepy head, go get the fly!",
       right: "enterSpout",
-      x: "5vw",
+      x: "5vwvw",
       y: "25vw"
     },
     ground:{
@@ -21,40 +21,40 @@ function mapService($log) {
       left: "enterSpout",
       right: "sunnySide1",
       up: "enterSpout",
-      x: "12",
-      y: "30"
+      x: "12vw",
+      y: "30vw"
     },
     enterSpout: {
       desc: "Enter the spout or go around.",
       left: "ground",
       right: "sunnySide1",
-      x: "15",
-      y: "25"
+      x: "15vw",
+      y: "25vw"
     },
     sunnySide1: {
       desc: "You are on the right track, keep going!",
       left: "ground",
       up: "sunnySide2",
-      x: "25",
-      y: "25"
+      x: "25vw",
+      y: "25vw"
     },
     sunnySide2: {
       desc: "You are on the right track, keep going!",
       left: "ground",
       up: "roof",
-      x: 25,
-      y: 15
+      x: "25vw",
+      y: "15vw"
     },
     roof: {
       desc: "Yay! You climbed up onto the roof! Now find the fly.",
       right: "fly",
-      x: "25",
-      y: "3"
+      x: "25vw",
+      y: "3vw"
     },
     fly: {
       desc: "You have found the fly, bon appetit!",
-      x: "31",
-      y: "1"
+      x: "31vw",
+      y: "1vw"
     }
   };
   return service;

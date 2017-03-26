@@ -13,5 +13,5 @@ ngAdventure.controller('SpiderController', ['$log', 'playerService', SpiderContr
 
 function SpiderController($log, playerService) {
   $log.debug('GameHistoryController');
-
+  this.player = playerService.player;
 }
