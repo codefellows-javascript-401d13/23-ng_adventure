@@ -37,27 +37,28 @@ function mapService($log) {
       east: 'playground'
     },
     playground:{
-      desc: 'your on the playground where there is a little girl sitting on the swing with her head down...she notices you',
+      desc: 'your on the playground where there is a little girl wearing bloody clothes sitting on the swing with her head down...she notices you',
       west: 'gym',
       south: 'corridor',
       east: 'swingset',
+      north: 'swingset'
     },
     swingset:{
-      desc: 'you got too close! the little girl bites you with her jagged zombie teeth!',
+      desc: 'you got too close! the little girl bites you with her jagged zombie teeth and digs her nails into your back!',
       south: 'ground',
-
     },
     ground:{
-      desc: 'your on the ground wrestling the zombie girl, MOVE!',
-      north: 'ground'
+      desc: 'your on the ground wrestling the zombie girl to get her off of you. You have several zombie bites.  It may be too late if you cant get to the lunchroom in two moves',
+      north: 'swingset',
+      south: 'corridor'
     },
     corridor: {
-      desc: 'message from the corridor',
+      desc: '',
       north: 'playground',
       east: 'lunchroom'
     },
     lunchroom: {
-      desc: 'you have eaten some cool snacks',
+      desc: 'you have eaten some cool snacks and your not going to be a zombie...maybe',
       west: 'corridor',
       east: 'hallway'
     }
