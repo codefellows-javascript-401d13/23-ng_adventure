@@ -1,18 +1,18 @@
 'use strict';
 
 import angular from 'angular';
-const weekendGetaway = angular.module('weekendGetaway');
+const carmenSanDiego = angular.module('carmenSanDiego');
 
-weekendGetaway.component('gameHistory', {
+carmenSanDiego.component('gameHistory', {
 	template: import './game-history.html',
 	controller: 'GameHistoryController',
 	controllerAs: 'gameHistoryCtrl'
 });
 
-weekendGetaway.controller('GameHistoryController', ['$log', 'travellerService', GameHistoryController]);
+carmenSanDiego.controller('GameHistoryController', ['$log', 'travellerService', GameHistoryController]);
 
 function GameHistoryController($log, travellerService) {
 	$log.debug('GameHistoryController');
 
-	this.history = travellerService.history;
+	this.itinerary = travellerService.itinerary;
 };

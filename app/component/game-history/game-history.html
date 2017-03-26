@@ -1,0 +1,18 @@
+<section class="history">
+	<h2>Hot on Carmen's Trail!</h2>
+
+	<ul ng-repeat="lead in gameHistoryCtrl.itinerary">
+		<li>
+			<span>trip:</span>
+			<span>{{ lead.trip }}</span>
+		</li>
+		<li>
+			<span>location:</span>
+			<span>{{ lead.location }}</span>
+		</li>
+		<li>
+			<span>desc:</span>
+			<span>{{ lead.desc }}</span>
+		</li>
+	</ul>
+</section>
