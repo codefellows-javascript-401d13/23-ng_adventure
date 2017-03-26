@@ -1,11 +1,10 @@
 @import "../../scss/lib/theme/vars";
 
 .gamepad {
+  text-align: center;
+  
   label {
     display: inline-block;
-    margin-left: 40%; 
-    margin-bottom: 1vw;
-    margin-right: 2vw;
     font-size: 2vw;
   }
 

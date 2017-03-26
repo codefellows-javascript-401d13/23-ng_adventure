@@ -18,7 +18,6 @@ function mapService($log) {
     },
     ground:{
       desc: "Hurry up! The rain is coming!",
-      left: "enterSpout",
       right: "sunnySide1",
       up: "enterSpout",
       x: "12vw",
@@ -26,21 +25,19 @@ function mapService($log) {
     },
     enterSpout: {
       desc: "Enter the spout or go around.",
-      left: "ground",
+      up: "ground",
       right: "sunnySide1",
       x: "15vw",
       y: "25vw"
     },
     sunnySide1: {
       desc: "You are on the right track, keep going!",
-      left: "ground",
       up: "sunnySide2",
       x: "25vw",
       y: "25vw"
     },
     sunnySide2: {
       desc: "You are on the right track, keep going!",
-      left: "ground",
       up: "roof",
       x: "25vw",
       y: "15vw"
@@ -48,6 +45,7 @@ function mapService($log) {
     roof: {
       desc: "Yay! You climbed up onto the roof! Now find the fly.",
       right: "fly",
+      left: "ground",
       x: "25vw",
       y: "3vw"
     },
