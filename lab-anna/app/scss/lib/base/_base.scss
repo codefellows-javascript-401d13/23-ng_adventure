@@ -12,12 +12,12 @@ h1 {
 }
 
 h2 {
-  font-size: 4vw;
+  font-size: 2vw;
   margin: $gutter-sm / 2 0;
 }
 
 button {
-  padding: 1% 5%;
+  padding: 1%;
   background: $btn-primary;
   color: $white;
   font-size: 2vw;
@@ -30,8 +30,4 @@ button {
     background: $brand-secondary;
     color: $btn-primary;
   }
-}
-
-select {
-  width: 25%;
 }

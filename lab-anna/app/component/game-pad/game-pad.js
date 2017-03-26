@@ -14,11 +14,11 @@ ngAdventure.controller('GamePadController', ['$log',  'playerService', GamePadCo
 function GamePadController($log, playerService) {
   $log.debug('GamePadController');
 
-  this.directions = ['up', 'right', 'left'];
-  this.moveDirection = this.directions[0];
+  this.directions = ['left','up', 'right'];
+//  this.moveDirection = this.directions[0];
 
-  this.movePlayer = function() {
-    playerService.movePlayer(this.moveDirection)
+  this.movePlayer = function(direction) {
+    playerService.movePlayer(direction)
     .then( location => {
       $log.log(`player currently at: ${location}`);
     })

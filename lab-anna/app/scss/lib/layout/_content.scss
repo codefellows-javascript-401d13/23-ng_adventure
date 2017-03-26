@@ -1,7 +1,17 @@
 main {
   min-height: 800px;
   width: 80%;
-  margin: 5% 10%;
+  margin: 1%
+}
+
+.gameInfo {
+  display: inline-block;
+  width: 45%;
+}
+
+.spiderMap {
+  display: inline-block;
+  width: 45%;
 }
 
 section {

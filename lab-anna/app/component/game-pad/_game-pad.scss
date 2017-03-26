@@ -2,14 +2,18 @@
 
 .gamepad {
   label {
-    display: block;
+    display: inline-block;
+    margin-left: 40%; 
     margin-bottom: 1vw;
-    font-size: 3vw;
-    font-style: italic;
+    margin-right: 2vw;
+    font-size: 2vw;
   }
 
   button {
-    width: 25%;
+    font-family: $font-secondary;
+    font-size: 1.2vw;
+    text-align: center;
+    width: 7%;
     margin: 1vw 2vw 0 0;
   }
 }
