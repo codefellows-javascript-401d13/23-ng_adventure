@@ -6,5 +6,5 @@ import angular from 'angular';
 
 angular.module('weekendGetaway', []);
 
-import './service/trip-service.js';
+import './service/map-service.js';
 import './service/traveller-service.js';

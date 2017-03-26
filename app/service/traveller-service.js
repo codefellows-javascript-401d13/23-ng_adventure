@@ -3,23 +3,23 @@
 import angular from 'angular';
 const weekendGetaway = angular.module('weekendGetaway');
 
-weekendGetaway.factory('travellerService', ['$q', '$log', 'tripService', travellerService]);
+weekendGetaway.factory('travellerService', ['$q', '$log', 'mapService', travellerService]);
 
-function travellerService($q, $log, tripService) {
+function travellerService($q, $log, mapService) {
   $log.debug('travellerService');
 
   let service = {};
 
   let trip = 0;
   let traveller = service.traveller = {
-    name: '',/*update with info from input*/
-    location: ''//update with info from maps
+    name: 'Gumshoe',
+    location: 'headquarters'
   };
 
   let itinerary = service.itinerary = [
     {
       trip,
-      desc: 'What do you want to do this weekend?',
+      desc: 'Where in the world is Carmen Sandiego?',
       location: traveller.location,
     }
   ];
@@ -29,7 +29,7 @@ function travellerService($q, $log, tripService) {
       trip++;
 
       let current = traveller.location;
-      let nextStop = tripService.someProp[current][b];
+      let nextStop = mapService.someProp[current][b];
       //update with info from destination details
 
       if(!nextStop) {
