@@ -4,10 +4,10 @@ require('./scss/main.scss');
 
 const angular = require('angular');
 
-angular.module('ngAdventure', []);
+angular.module('sewerRat', []);
 
 require('./service/map-service.js');
-require('./srevice/player-service.js');
+require('./service/player-service.js');
 
 require('./component/game-pad/game-pad.js');
 require('./component/player-info/player-info.js');

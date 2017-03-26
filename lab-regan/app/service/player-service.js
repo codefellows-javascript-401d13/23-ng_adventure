@@ -2,9 +2,9 @@
 
 const angular = require('angular');
 
-const ngAdventure = angular.module('ngAdventure');
+const sewerRat = angular.module('sewerRat');
 
-ngAdventure.factory('playerService', ['$q', '$log', 'mapService', playerService]);
+sewerRat.factory('playerService', ['$q', '$log', 'mapService', playerService]);
 
 function playerService($q, $log, mapService){
   $log.debug('player service');

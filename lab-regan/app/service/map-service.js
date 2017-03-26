@@ -1,9 +1,9 @@
 'use strict';
 
 const angular = require('angular');
-const ngAdventure = angular.module('ngAdventure');
+const sewerRat = angular.module('sewerRat');
 
-ngAdventure.factory('mapService', ['$log', mapService]);
+sewerRat.factory('mapService', ['$log', mapService]);
 
 function mapService($log){
   $log.debug('map service');
@@ -27,13 +27,13 @@ function mapService($log){
         east: 'dentist'
       },
       dentist: {
-        desc: 'message from the rat dentist',
-        west: 'rat gym',
+        desc: 'message from the dentist',
+        west: 'gym',
         north: 'pawn shop',
         up: 'dumpster'
       },
       pawnShop: {
-        desc: 'message from rat pawn shop',
+        desc: 'message from pawn shop',
         south: 'dentist',
         east: 'cafe'
       },
