@@ -60,7 +60,12 @@ function mapService($log) {
     lunchroom: {
       desc: 'you have eaten some cool snacks and your not going to be a zombie...maybe',
       west: 'corridor',
-      east: 'hallway'
+      east: 'hallway',
+      north: 'outside'
+    },
+    outside: {
+      desc: 'you made it out of the Dark and Dead school ',
+      
     }
   };
 

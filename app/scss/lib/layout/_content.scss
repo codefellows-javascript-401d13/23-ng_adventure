@@ -1,11 +1,15 @@
 body{
   text-align: center;
   text-decoration: none;
-  background-image: ("../imgs/zombiegirl.jpg");
+  background-image: url ("/imgs/zombiegirl.jpg");
+  width:80%;
+  min-height: 800px;
+  margin: 5% 10%;
 }
 
 h2{
   margin-bottom:1px;
+  text-decoration: underline;
 }
 
 ul{

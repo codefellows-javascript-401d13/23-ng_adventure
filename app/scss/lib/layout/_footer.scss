@@ -1,3 +1,8 @@
-footer{
-  margin-top:-50%;
+@import "../theme/vars";
+
+footer {
+  color: grey;
+  padding: 5% / 2;
+  font-size: 2vw;
+  text-align: right;
 }
