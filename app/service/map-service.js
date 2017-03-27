@@ -19,7 +19,7 @@ function mapService($log) {
       west: 'closet'
     },
     hallway: {
-      desc: 'you are in the school hallway',
+      desc: 'you are in the dark school hallway.  find your way out of this school',
       north: 'auditorium',
       east: 'gym',
       south: 'closet',
