@@ -20,6 +20,7 @@
   "homepage": "https://github.com/dkulp23/23-ng_adventure#readme",
   "dependencies": {
     "angular": "^1.6.3",
+    "angular-google-maps": "^2.4.1",
     "babel-core": "^6.24.0",
     "babel-loader": "^6.4.1",
     "babel-preset-es2015": "^6.24.0",

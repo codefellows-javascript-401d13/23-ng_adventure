@@ -4,7 +4,7 @@ import './scss/main.scss';
 
 import angular from 'angular';
 
-angular.module('carmenSandiego', []);
+angular.module('carmenSandiego', ['uiGmapgoogle-maps']);
 
 require('./service/map-service.js');
 require('./service/traveller-service.js');

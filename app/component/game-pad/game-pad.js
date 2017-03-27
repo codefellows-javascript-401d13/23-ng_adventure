@@ -14,9 +14,12 @@ carmenSandiego.controller('GamePadController', ['$log', 'travellerService', 'map
 function GamePadController($log, travellerService, mapService) {
 	$log.debug('GamePadController');
 
-	this.question = mapService.mapData[travellerService.traveller.location].question;
-	this.clues = mapService.mapData[travellerService.traveller.location].clues;
-	this.moveDirection = this.clues[0];
+		this.question = mapService.mapData[travellerService.traveller.location].question;
+		this.clues = mapService.mapData[travellerService.traveller.location].clues;
+		this.moveDirection = this.clues[0];
+	this.giveClue = function(location) {
+	
+	};
 
 	this.movePlayer = function() {
 		travellerService.moveTraveller(this.moveDirection)

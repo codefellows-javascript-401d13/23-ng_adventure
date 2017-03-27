@@ -42,7 +42,6 @@ function travellerService($q, $log, mapService) {
         return reject('not a valid location');
       }
 
-      $log.log('destination', mapService.mapData);
       itinerary.unshift({
         trip,
         location: traveller.location,
@@ -50,7 +49,7 @@ function travellerService($q, $log, mapService) {
         crimebucks: traveller.crimebucks
       });
 
-      traveller.location = nextStop;
+      traveller.location = destination;
       traveller.crimebucks += 10;
       return resolve(traveller.location);
     });
