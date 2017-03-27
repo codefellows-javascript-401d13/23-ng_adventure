@@ -31,7 +31,7 @@ function travellerService($q, $log, mapService) {
       trip++;
 
       let current = traveller.location;
-      let nextStop = mapService.mapData[current][destination];
+      let nextStop = mapService.mapData[destination];
 
       if(!nextStop) {
         itinerary.unshift({
@@ -42,10 +42,11 @@ function travellerService($q, $log, mapService) {
         return reject('not a valid location');
       }
 
+      $log.log('destination', mapService.mapData);
       itinerary.unshift({
         trip,
         location: traveller.location,
-        desc: mapService.mapData[nextStop].desc,
+        desc: nextStop.desc,
         crimebucks: traveller.crimebucks
       });
 
