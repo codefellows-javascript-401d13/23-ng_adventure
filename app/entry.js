@@ -6,9 +6,9 @@ import angular from 'angular';
 
 angular.module('carmenSandiego', []);
 
-import './service/map-service.js';
-import './service/traveller-service.js';
+require('./service/map-service.js');
+require('./service/traveller-service.js');
 
-import './component/game-history/game-history.js';
-import './component/game-pad/game-pad.js';
-import './component/player-info/player-info.js';
+require('./component/game-history/game-history.js');
+require('./component/game-pad/game-pad.js');
+require('./component/player-info/player-info.js');
