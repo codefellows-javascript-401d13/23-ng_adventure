@@ -3,9 +3,9 @@
 const angular = require('angular');
 const ngAdventure = angular.module('ngAdventure');
 
-ngAdventure.factory('mapService', ['$log', mapService]);
+ngAdventure.factory('playerService', ['$q', '$log', 'mapService', playerService]);
 
-function mapService($log){
+function playerService($q, $log, mapService){
   $log.debug('map service');
 
   let service = {};
