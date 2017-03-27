@@ -33,7 +33,7 @@ function playerService($q, $log, mapService){
 
       let current = player.location;
       let newLocation = mapService.mapData[current][direction];
-
+      player.location = newLocation;
       if (!newLocation){
         history.unshift({
           turn,
@@ -51,7 +51,7 @@ function playerService($q, $log, mapService){
         hp:player.hp
       });
 
-      player.location = newLocation;
+
       return resolve(player.location);
     });
   };

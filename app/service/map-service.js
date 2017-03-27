@@ -13,7 +13,8 @@ function mapService($log) {
   service.mapData = {
     closet: {
       desc: 'get out of this closet',
-      north: 'hallway'
+      north: 'hallway',
+      south: 'closet'
     },
     hallway: {
       desc: 'you are in the school hallway',
@@ -65,7 +66,7 @@ function mapService($log) {
     },
     outside: {
       desc: 'you made it out of the Dark and Dead school ',
-      
+
     }
   };
 
