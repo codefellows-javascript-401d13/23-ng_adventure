@@ -6,7 +6,7 @@ const carmenSandiego = angular.module('carmenSandiego');
 carmenSandiego.component('gamePad', {
 	template: require('./game-pad.html'),
 	controller: 'GamePadController',
-	controllerAd: 'gamePadCtrl'
+	controllerAs: 'gamePadCtrl'
 });
 
 carmenSandiego.controller('GamePadController', ['$log', 'travellerService', 'mapService', GamePadController]);
@@ -19,7 +19,7 @@ function GamePadController($log, travellerService, mapService) {
 	this.moveDirection = this.clues[0];
 
 	this.movePlayer = function() {
-		travellerService.movePlayer(this.moveDirection)
+		travellerService.moveTraveller(this.moveDirection)
 		.then( location => {
 			$log.log(`player now at: ${location}`);
 		})
