@@ -15,7 +15,6 @@ sewerRat.controller('PlayerInfoController', ['$log', 'playerService', PlayerInfo
 function PlayerInfoController($log, playerService){
   $log.debug('PlayerInfoController');
   this.player = playerService.player;
-  // this.history = playerService.history[history.length - 1];
-  this.history = playerService.history[playerService.history.length - 1];
-
+  this.history = playerService.history[0];
+  $log.debug(this.history.desc);
 };

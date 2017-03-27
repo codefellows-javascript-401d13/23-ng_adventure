@@ -24,7 +24,8 @@ function GamePadController($log, playerService){
     playerService.movePlayer(input)
     .then( loc => {
       $log.log(`Rat is now at ${loc}`);
-      // playerService.player.message = loc.message;
+      //mess with this
+      // playerService.history.message = loc.message;
     })
     .catch(err => {
       $log.error(err);
