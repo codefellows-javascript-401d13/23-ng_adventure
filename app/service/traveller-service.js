@@ -22,6 +22,7 @@ function travellerService($q, $log, mapService) {
       trip,
       desc: 'Where in the world is Carmen Sandiego?',
       location: traveller.location,
+      crimebucks: traveller.crimebucks
     }
   ];
 
@@ -30,8 +31,7 @@ function travellerService($q, $log, mapService) {
       trip++;
 
       let current = traveller.location;
-      let nextStop = mapService.someProp[current][b];
-      //update with info from destination details
+      let nextStop = mapService.someProp[current][destination];
 
       if(!nextStop) {
         itinerary.unshift({
@@ -45,10 +45,12 @@ function travellerService($q, $log, mapService) {
       itinerary.unshift({
         trip,
         location: traveller.location,
-        desc: ''//update with info from destination details
+        desc: mapService.mapData[nextStop].desc,
+        crimebucks: traveller.crimebucks
       });
 
       traveller.location = nextStop;
+      traveller.crimebucks += 10;
       return resolve(traveller.location);
     });
   };

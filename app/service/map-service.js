@@ -3,9 +3,9 @@
 import angular from 'angular';
 const carmenSandiego = angular.module('carmenSandiego');
 
-carmenSandiego.factory('mapService', ['$log', tripService]);
+carmenSandiego.factory('mapService', ['$log', mapService]);
 
-function tripService($log) {
+function mapService($log) {
   $log.debug('mapService');
 
   let service = {};
