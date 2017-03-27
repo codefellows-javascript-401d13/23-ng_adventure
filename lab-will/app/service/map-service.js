@@ -11,38 +11,77 @@ function mapService($log) {
   let service = {};
 
   service.mapData = {
-    cabin: {
-      desc: "message from the cabin",
-      south: "trail"
+    cellA: {
+      desc: "You awake in a dark room. You are handcuffed to a radiator. As you sit up, you become aware of your splitting headache. It feels like a couple of monkeys fighting over a jar of marbles. Now, what do do about your handcuff predicament? Luckily for you, you're paranoid and you have a handcuff key hidden in your beard for just this situation. You get up and as you look around, there is only one exit to the east. Looks like that's the place to go next.",
+      east: "hallA"
     },
-    trail: {
-      desc: "message from the trail",
-      north: "cabin",
-      east: "gate",
-      south: "pit"
+    cellB: {
+      desc: "Cell B",
+      south: "hallA"
     },
-    pit: {
-      desc: "you are stuck in a pit - sucks to be you",
-      north: "trail"
+    cellC: {
+      desc: "Cell C",
+      west: "hallA"
     },
-    gate: {
-      desc: "message from the gate",
-      west: "trail",
-      east: "castle"
+    cellD: {
+      desc: "Cell D",
+      east: "hallD"
     },
-    castle: {
-      desc: "message from the castle",
-      west: "gate",
-      south: "corridor"
+    cellF: {
+      desc: "Cell F",
+      north: "hallD"
     },
-    corridor: {
-      desc: "message from the corridor",
-      north: "castle",
-      east: "snackroom"
+    cellG: {
+      desc: "Cell G",
+      east: "hallH"
     },
-    snackroom: {
-      desc: "you found the snackroom - enjoy your snacks",
-      west: "corridor"
+    hallA: {
+      desc: "Hallway-A",
+      north: "cellB",
+      east: "cellC",
+      south: "hallB",
+      west: "cellA"
+    },
+    hallB: {
+      desc: "Hallway-B",
+      north: "hallA",
+      south: "hallC"
+    },
+    hallC: {
+      desc: "Hallway-C",
+      north: "hallB",
+      south: "hallD"
+    },
+    hallD: {
+      desc: "Hallway-D",
+      north: "hallC",
+      east: "hallE",
+      south: "cellF",
+      west: "cellD"
+    },
+    hallE: {
+      desc: "Hallway-E",
+      east: "hallF",
+      west: "hallD"
+    },
+    hallF: {
+      desc: "Hallway-F",
+      south: "hallG",
+      west: "hallE"
+    },
+    hallG: {
+      desc: "Hallway-G",
+      north: "hallF",
+      south: "hallH"
+    },
+    hallH: {
+      desc: "Hallway-H",
+      north: "hallG",
+      east: "exit",
+      west: "cellG"
+    },
+    exit: {
+      desc: "You Win!"
     }
   };
 

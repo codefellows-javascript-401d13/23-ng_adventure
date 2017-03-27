@@ -171,38 +171,15 @@ function mapService($log) {
   var service = {};
 
   service.mapData = {
-    cabin: {
-      desc: "message from the cabin",
-      south: "trail"
+    roomOneHundred: {
+      desc: "This is the cell you woke up in. There is only one door to the east and it leads to the hallway.",
+      east: "hallA"
     },
-    trail: {
+    hallA: {
       desc: "message from the trail",
       north: "cabin",
       east: "gate",
       south: "pit"
-    },
-    pit: {
-      desc: "you are stuck in a pit - sucks to be you",
-      north: "trail"
-    },
-    gate: {
-      desc: "message from the gate",
-      west: "trail",
-      east: "castle"
-    },
-    castle: {
-      desc: "message from the castle",
-      west: "gate",
-      south: "corridor"
-    },
-    corridor: {
-      desc: "message from the corridor",
-      north: "castle",
-      east: "snackroom"
-    },
-    snackroom: {
-      desc: "you found the snackroom - enjoy your snacks",
-      west: "corridor"
     }
   };
 
@@ -228,15 +205,15 @@ function playerService($q, $log, mapService) {
 
   var turn = 0;
   var player = service.player = {
-    name: 'bnates',
-    location: 'cabin',
+    name: 'Prince Frumpledorp of Horkshire',
+    location: 'cell',
     hp: 16
   };
 
   var history = service.history = [{
     turn: turn,
-    desc: 'Welcome to ngAdventure',
-    location: 'cabin',
+    desc: "You awake in a dark room. You are handcuffed to a radiator. As you sit up, you become aware of your splitting headache. It feels like a couple of monkeys fighting over a jar of marbles. Now, what do do about your handcuff predicament? Luckily for you, you're paranoid and you have a handcuff key hidden in your beard for just this situation. You get up and as you look around, there is only one exit to the east. Looks like that's the place to go next.",
+    location: 'cell',
     hp: player.hp
   }];
 
