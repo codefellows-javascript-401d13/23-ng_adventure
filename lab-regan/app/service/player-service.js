@@ -13,7 +13,7 @@ function playerService($q, $log, mapService){
 
   let move = 0;
   let player = service.player = {
-    name: 'user-name',
+    name: 'Ratty',
     location: 'street',
     health: 20,
     cash: 5

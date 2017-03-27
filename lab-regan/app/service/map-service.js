@@ -12,52 +12,54 @@ function mapService($log){
 
   service.mapData = {
       street: {
-        desc: 'message from the street',
+        desc: 'You\'re on the street...don\'t lurk around up here!',
         down: 'pub'
       },
       pub: {
-        desc: 'message from the pub',
+        desc: 'You\ve found the local rat pub, stay for a brew if you\'d like',
         north: 'gym',
         east: 'fortuneTeller',
         up: 'street'
       },
       gym: {
-        desc: 'message from the gym',
+        desc: 'You just strutted into the gym, time to get swole, rat breh',
         south: 'pub',
         east: 'dentist'
       },
       dentist: {
-        desc: 'message from the dentist',
+        desc: 'You have arrived at the dentist\s office',
         west: 'gym',
         north: 'pawn shop',
         up: 'dumpster'
       },
       pawnShop: {
-        desc: 'message from pawn shop',
+        desc: 'Welcome to the pawn shop',
         south: 'dentist',
         east: 'cafe'
       },
       cafe: {
-        desc: 'message from the cafe',
+        desc: 'You enter a cafe. Sit down, have a coffee',
         west: 'pawnShop',
         up: 'pizzaRestaurant',
         south: 'recordStore'
       },
       recordStore: {
-        desc: 'message from the record store',
+        desc: 'You scurried into a record shop. Care to browse some vinyl?',
         north: 'cafe',
         west: 'fortuneTeller'
       },
       fortuneTeller: {
-        desc: 'message from the fortuneTeller',
+        desc: 'You have entered the Fortune Teller\'s murky office',
         west: 'pub',
         east: 'recordStore',
         up: 'treasure'
       },
       dumpster: {
+        desc: 'Score! You found a dumpster! Treats-a-plenty!',
         down: 'dentist'
       },
       pizzaRestaurant: {
+        desc: 'You emerged in a pizzeria! The floor is covered with food! Beware of the workers!',
         down: 'cafe'
       },
       treasure: {
