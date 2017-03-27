@@ -1,0 +1,32 @@
+@import "../../scss/lib/theme/vars";
+
+
+.history {
+  float: right;
+  padding: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: black;
+  width: 40vw;
+  height: 30vw;
+  overflow: auto;
+  
+  h2 {
+    padding: 10px;
+    font-size: 3vw;
+    text-align: center;
+    background-color: $secondary-color;
+    color: $quaternary-color;
+  }
+  span {
+    font-size: 2vw;
+    line-height: 2em;
+    
+    &:first-child{
+      color: $tertiary-color;
+    }
+
+    &:last-child{
+      color: white;
+    }
+  }
+}
