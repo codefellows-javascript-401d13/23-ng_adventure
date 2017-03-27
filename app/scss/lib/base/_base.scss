@@ -1,8 +1,13 @@
 @import "../theme/vars";
 
-body, html{
+body{
   background: black;
-  font-family: 'Jim Nightshade', cursive;
+  font-family: $mainfont;
   font-size: 2vw;
   color: $bluedream;
+  text-align: center;
+  text-decoration: none;
+  width:80%;
+  min-height: 800px;
+  margin: 5% 10%;
 }
