@@ -16,7 +16,7 @@ function mapService($log) {
       east: "hallA"
     },
     cellB: {
-      desc: "Cell B",
+      desc: "You are in cell B. It's the same as your cell except for a poster on the wall. You tear the poster down to find a map drawn on the back. You take it with you. (to veiw the map, go here: https://github.com/William-Skelton/23-ng_adventure/blob/master/lab-will/map.txt)",
       south: "hallA"
     },
     cellC: {

@@ -5,9 +5,9 @@
     <ul ng-model="gamePadCtrl.moveDirection">
       <li ng-repeat="direction in gamePadCtrl.directions">
         <button
+        class="directions"
           type="button"
-          value="{{ direction }}"
-          ng-click="gamePadCtrl.movePlayer()">
+          ng-click="gamePadCtrl.movePlayer(direction)">
           {{ direction }}
         </button>
       </li>

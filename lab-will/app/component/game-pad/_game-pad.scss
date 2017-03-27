@@ -8,8 +8,19 @@
     font-style: italic;
   }
 
+  ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
   button {
     width: 25%;
     margin: 1vw 2vw 0 0;
+  }
+
+  .directions {
+    width: 100%;
   }
 }
