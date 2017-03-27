@@ -1,7 +1,7 @@
 'use strict';
 
 const HTMLPlugin = require('html-webpack-plugin');
-const ExtractTextPlugin = reauire('extract-text-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   entry: `${__dirname}/app/entry.js`,

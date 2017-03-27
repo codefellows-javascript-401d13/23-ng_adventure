@@ -12,25 +12,26 @@ function playerService($q, $log, mapService){
   let service = {};
 
   let move = 0;
-
   let player = service.player = {
     name: 'user-name',
-    location: 'emptyStreet',
-    health: 20
+    location: 'street',
+    health: 20,
+    cash: 5
   };
 
   let history = service.history = [
     {
       move,
       desc: 'Welcome, sewer rat!',
-      location: 'emptyStreet',
-      health: player.health
+      location: 'street',
+      health: player.health,
+      cash: player.cash
     }
   ];
 
   service.movePlayer = function(direction){
     return new $q((resolve, reject) => {
-      move++,
+      move++;
 
       let current = player.location;
       let newLocation = mapService.mapData[current][direction];
@@ -38,10 +39,13 @@ function playerService($q, $log, mapService){
       if(!newLocation){
         history.unshift({
           move,
-          desc: 'You ate some bad garbage, got confused, and ran into a wall',
+          desc: 'You can\'t go that way.',
           location: player.location,
           health: player.health
         });
+        if((current == 'street' || current == 'treasure' || current == 'pizzaRestaurant' || current == 'dumpster') && direction == 'up') {
+          $log.debug('You want to go up? Sorry you cant fly');
+        }
         return reject('You don\'t want to go down there!');
       };
 
