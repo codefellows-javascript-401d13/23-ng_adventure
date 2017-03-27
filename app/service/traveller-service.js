@@ -13,7 +13,8 @@ function travellerService($q, $log, mapService) {
   let trip = 0;
   let traveller = service.traveller = {
     name: 'Gumshoe',
-    location: 'headquarters'
+    location: 'headquarters',
+    crimebucks: 50
   };
 
   let itinerary = service.itinerary = [
