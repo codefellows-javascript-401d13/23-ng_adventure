@@ -14,7 +14,9 @@ function mapService($log) {
     closet: {
       desc: 'get out of this closet',
       north: 'hallway',
-      south: 'closet'
+      south: 'closet',
+      east: 'closet',
+      west: 'closet'
     },
     hallway: {
       desc: 'you are in the school hallway',
@@ -26,17 +28,23 @@ function mapService($log) {
     auditorium: {
       desc: 'you are in the the dark abandoned auditorium',
       south: 'hallway',
-      east: 'office'
+      east: 'office',
+      west: 'auditorium',
+      north: 'auditorium'
     },
     office: {
       desc: 'you see a zombie principal in the office, GET OUT!',
       west: 'auditorium',
+      east: 'office',
+      south: 'office',
+      north: 'office'
     },
     gym: {
       desc: 'zombie P.E. students run toward you chanting ring around the rosies!',
       west: 'hallway',
       east: 'playground',
-      north: 'gym'
+      north: 'gym',
+      // south
     },
     playground:{
       desc: 'your on the playground where there is a little girl wearing bloody clothes sitting on the swing with her head down...she notices you',
@@ -50,19 +58,19 @@ function mapService($log) {
       south: 'ground',
       north: 'corridor',
       west: 'playground',
-      east: 'ballpit'
+      east: 'sandbox'
     },
-    ballpit:{
+    sandbox:{
       desc: 'you are stuck',
-      south: 'ballpit',
-      north: 'ballpit',
-      west: 'ballpit',
-      east: 'ballpit'
+      south: 'sandbox',
+      north: 'sandbox',
+      west: 'sandbox',
+      east: 'sandbox'
     },
     ground:{
       desc: 'your on the ground wrestling the zombie girl to get her off of you. You have several zombie bites.  It may be too late if you cant get to the lunchroom in two moves',
       north: 'swingset',
-      south: 'ballpit',
+      south: 'sandbox',
       east: 'playground',
       west:'corridor',
     },
@@ -77,7 +85,8 @@ function mapService($log) {
       desc: 'you have eaten some cool snacks and your not going to be a zombie...maybe',
       west: 'corridor',
       east: 'hallway',
-      north: 'outside'
+      north: 'outside',
+      south: 'auditorium'
     },
     outside: {
       desc: 'you made it out of the Dark and Dead school.  You are lucky you survived.  Never return!',
