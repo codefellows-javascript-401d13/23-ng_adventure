@@ -9,13 +9,14 @@ carmenSandiego.component('gamePad', {
 	controllerAd: 'gamePadCtrl'
 });
 
-carmenSandiego.controller('GamePadController', ['$log', 'travellerService', GamePadController]);
+carmenSandiego.controller('GamePadController', ['$log', 'travellerService', 'mapService', GamePadController]);
 
-function GamePadController($log, travellerService) {
+function GamePadController($log, travellerService, mapService) {
 	$log.debug('GamePadController');
 
-	/*this.directions*/
-	this.moveDirection = this.directions[0];
+	this.question = mapService.mapData[travellerService.traveller.location].question;
+	this.clues = mapService.mapData[travellerService.traveller.location].clues;
+	this.moveDirection = this.clues[0];
 
 	this.movePlayer = function() {
 		travellerService.movePlayer(this.moveDirection)

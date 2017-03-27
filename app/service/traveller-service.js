@@ -31,7 +31,7 @@ function travellerService($q, $log, mapService) {
       trip++;
 
       let current = traveller.location;
-      let nextStop = mapService.someProp[current][destination];
+      let nextStop = mapService.mapData[current][destination];
 
       if(!nextStop) {
         itinerary.unshift({
