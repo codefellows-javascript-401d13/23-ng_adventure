@@ -20,8 +20,8 @@ function playerService($q, $log, mapService){
   let history = service.history = [
     {
       turn,
-      desc: 'Welcome to ngAdventure',
-      location: 'cabin',
+      desc: 'Welcome to ngAdventure, you are here to play a game',
+      location: 'Your House',
       hp: player.hp
     }
   ];

@@ -12,31 +12,31 @@ function mapService($log){
 
   service.mapData = {
     home: {
-      desc: 'message from your house',
+      desc: 'Its a sunny day, time to play!',
       south: 'road'
     },
     road:{
-      desc: 'message from the road',
+      desc: 'Theres a few options for you here, where to next?',
       north: 'home',
       east: 'beach',
       south: 'hole'
     },
     hole: {
-      desc: 'you are stuck in a hole, that sucks',
+      desc: 'whoops! Wrong way! You are stuck in a hole.',
       north: 'road'
     },
     beach: {
-      desc: 'message from the beach',
+      desc: 'Well, the beach is quite nice today, to go in or not?',
       west: 'smoothie shop',
       east: 'ocean'
     },
     ocean:{
-      desc: 'message from the ocean',
+      desc: 'Ooooh the water feels nice, keep swimming',
       west: 'beach',
       south: 'floaty'
     },
     floaty: {
-      desc: 'message from the floatie',
+      desc: 'Sit back and relax while you float the the dock',
       north: 'ocean',
       east: 'dock'
     },
