@@ -1,0 +1,25 @@
+@import "../../scss/lib/theme/vars";
+
+.playercontrolls {
+  background-color: $primary-color;
+
+  label {
+    color: $quaternary-color;
+  }
+
+  button {
+    font-size: 1em;
+    background-color: $secondary-color;
+    color: $quaternary-color;
+    height: 4vw;
+    width: 50vw;
+    border: none;
+    text-decoration-style: none;
+
+    &:hover{
+      background-color: $quaternary-color;
+      color: $secondary-color;
+      
+    }
+  }
+}

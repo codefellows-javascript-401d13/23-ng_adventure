@@ -1,0 +1,14 @@
+@import "../theme/vars";
+
+header {
+  width: 100%;
+  background-color: $primary-color;
+  height: 10vw;
+
+  h1{
+    font-size: 60px;
+    padding-top: 2vw;
+    text-align: centre;
+    color: $quaternary-color;
+  }
+}

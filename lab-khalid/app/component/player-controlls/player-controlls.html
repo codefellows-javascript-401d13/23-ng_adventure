@@ -1,0 +1,11 @@
+<section class="playercontrolls">
+  <form name="playercontrolls" novalidate>
+    <label for="direction">Travel to the  </label>
+    <select ng-model="playerControllsCtrl.moveDirection">
+      <option ng-repeat="direction in playerControllsCtrl.directions" value="{{direction}}">
+        {{direction}}
+      </option>
+    </select>
+    <button type="button" ng-click="playerControllsCtrl.movePlayer()">move player</button>
+  </form>
+</section>
