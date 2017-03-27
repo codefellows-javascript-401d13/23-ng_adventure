@@ -1,3 +1,11 @@
-body {
-  background: orange;
-}
+// :: BASE :: //
+@import "lib/base/reset";
+@import "lib/base/base";
+
+// :: LAYOUT :: //
+@import "lib/layout/content";
+@import "lib/layout/footer";
+@import "lib/layout/header";
+
+// :: THEME :: //
+@import "lib/theme/vars";

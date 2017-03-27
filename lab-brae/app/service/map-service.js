@@ -21,7 +21,7 @@ function mapService($log) {
       west: 'aviary',
       south: 'trail'
     },
-    avairy: {
+    aviary: {
       desc: 'impressive aviary filled with exotic birds',
       east: 'garden'
     },

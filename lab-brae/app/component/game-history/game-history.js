@@ -1,7 +1,7 @@
 'use strict';
 
 const angular = require('angular');
-const ngAdventure = angular.model('ngAdventure');
+const ngAdventure = angular.module('ngAdventure');
 
 ngAdventure.component('gameHistory', {
   template: require('./game-history.html'),

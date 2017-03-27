@@ -9,10 +9,11 @@ function playerService($q, $log, mapService) {
   $log.debug('player service');
 
   let service = {};
+  let name = prompt('what is your name?');
 
   let turn = 0;
   let player = service.player = {
-    name: 'katherine',
+    name: name,
     location: 'house',
     hp: 10
   };
