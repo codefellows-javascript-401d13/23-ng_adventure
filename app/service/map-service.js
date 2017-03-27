@@ -44,7 +44,7 @@ function mapService($log) {
       west: 'hallway',
       east: 'playground',
       north: 'gym',
-      // south
+      south: 'gym'
     },
     playground:{
       desc: 'your on the playground where there is a little girl wearing bloody clothes sitting on the swing with her head down...she notices you',
