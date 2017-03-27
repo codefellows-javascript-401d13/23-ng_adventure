@@ -10,7 +10,7 @@ module.exports = {
     path: `${__dirname}/build`
   },
   plugins: [
-    new HTMLPlugin({ `${__dirname}/app/index.html`}),
+    new HTMLPlugin({ template: `${__dirname}/app/index.html` }),
     new ExtractTextPlugin('bundle.css')
   ],
   module: {
@@ -28,6 +28,6 @@ module.exports = {
         test: /\.scss$/,
         loader: ExtractTextPlugin.extract(['css-loader', 'sass-loader'])
       }
-    ];
+    ]
   }
 };

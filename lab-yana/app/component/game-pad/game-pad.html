@@ -1,0 +1,13 @@
+<section class="gamepad">
+  <form name="gamepad" ng-if="gamePadCtrl.gameOn" novalidate>
+    <label for="direction">{{gamePadCtrl.instructions}}</label>
+    <select ng-model="gamePadCtrl.moveDirection">
+      <option ng-repeat="direction in gamePadCtrl.directions" value="{{direction}}">
+        {{direction}}
+      </option>
+    </select>
+    <button type="button" ng-click="gamePadCtrl.move()">{{gamePadCtrl.buttonLabel}}</button>
+  </form>
+  <p ng-if="!gamePadCtrl.gameOn">Refresh the page to play again!</p>
+  <br>
+</section>

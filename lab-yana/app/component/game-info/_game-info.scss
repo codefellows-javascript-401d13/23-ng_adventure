@@ -1,0 +1,11 @@
+.info p {
+  font-size: $fontSize * 1.5;
+  color: red;
+  margin-bottom: $margin * 0.7;
+}
+
+.info div {
+  font-size: $fontSize * 1.2;
+  color: green;
+  margin-bottom: $margin;
+}
