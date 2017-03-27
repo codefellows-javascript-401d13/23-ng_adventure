@@ -1,9 +1,9 @@
 'use strict';
 
 import angular from 'angular';
-const carmenSanDiego = angular.module('carmenSanDiego');
+const carmenSandiego = angular.module('carmenSandiego');
 
-carmenSanDiego.factory('travellerService', ['$q', '$log', 'mapService', travellerService]);
+carmenSandiego.factory('travellerService', ['$q', '$log', 'mapService', travellerService]);
 
 function travellerService($q, $log, mapService) {
   $log.debug('travellerService');

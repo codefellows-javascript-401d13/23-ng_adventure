@@ -1,17 +1,17 @@
 'use strict';
 
 import angular from 'angular';
-const carmenSanDiego = angular.module('carmenSanDiego');
+const carmenSandiego = angular.module('carmenSandiego');
 
-carmenSanDiego.component('playerInfo', {
-	template: import './player-info.html',
+carmenSandiego.component('playerInfo', {
+	template: require('./player-info.html'),
 	controller: 'PlayerInfoController',
 	controllerAs: 'playerInfoCtrl'
 });
 
-carmenSanDiego.controller('PlayerInfoController', ['$log', 'travellerService', PlayerInfoController]);
+carmenSandiego.controller('PlayerInfoController', ['$log', 'travellerService', PlayerInfoController]);
 
-function PlayerInfoController('$log', travellerService) {
+function PlayerInfoController($log, travellerService) {
 	$log.debug('PlayerInfoController');
 
 	this.traveller = travellerService.traveller;
