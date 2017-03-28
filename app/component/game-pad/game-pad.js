@@ -17,17 +17,16 @@ function GamePadController($log, travellerService, mapService) {
 		this.question = mapService.mapData[travellerService.traveller.location].question;
 		this.clues = mapService.mapData[travellerService.traveller.location].clues;
 		this.moveDirection = this.clues[0];
-	this.giveClue = function(location) {
-	
-	};
 
 	this.movePlayer = function() {
 		travellerService.moveTraveller(this.moveDirection)
 		.then( location => {
-			$log.log(`player now at: ${location}`);
+			this.question = location.question;
+			this.clues = location.clues;
+			$log.log(`player now at: ${location.name}`);
 		})
 		.catch( err => {
 			$log.error(err);
 		});
 	};
-};
+}

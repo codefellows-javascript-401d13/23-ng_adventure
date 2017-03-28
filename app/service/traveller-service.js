@@ -13,7 +13,7 @@ function travellerService($q, $log, mapService) {
   let trip = 0;
   let traveller = service.traveller = {
     name: 'Gumshoe',
-    location: 'headquarters',
+    location: mapService.mapData.headquarters.name,
     crimebucks: 50
   };
 
@@ -30,7 +30,7 @@ function travellerService($q, $log, mapService) {
     return new $q((resolve, reject) => {
       trip++;
 
-      let current = traveller.location;
+      // let current = traveller.location;
       let nextStop = mapService.mapData[destination];
 
       if(!nextStop) {
@@ -44,12 +44,12 @@ function travellerService($q, $log, mapService) {
 
       itinerary.unshift({
         trip,
-        location: traveller.location,
+        location: traveller.location.name,
         desc: nextStop.desc,
         crimebucks: traveller.crimebucks
       });
 
-      traveller.location = destination;
+      traveller.location = nextStop;
       traveller.crimebucks += 10;
       return resolve(traveller.location);
     });

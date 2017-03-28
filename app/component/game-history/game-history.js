@@ -15,4 +15,4 @@ function GameHistoryController($log, travellerService) {
 	$log.debug('GameHistoryController');
 
 	this.itinerary = travellerService.itinerary;
-};
+}

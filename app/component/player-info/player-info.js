@@ -15,4 +15,4 @@ function PlayerInfoController($log, travellerService) {
 	$log.debug('PlayerInfoController');
 
 	this.traveller = travellerService.traveller;
-};
+}
