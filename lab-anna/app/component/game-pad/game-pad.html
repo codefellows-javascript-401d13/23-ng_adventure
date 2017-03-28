@@ -1,0 +1,11 @@
+<section class="gamepad">
+  <form name="gamepad" novalidate>
+    <label for="direction">Catch the Fly</label>
+
+      <button type="button" ng-click="gamePadCtrl.movePlayer(direction)"
+      ng-repeat="direction in gamePadCtrl.directions">
+      {{ direction }}
+      </button>
+
+  </form>
+</section>
