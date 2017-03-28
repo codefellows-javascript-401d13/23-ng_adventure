@@ -1,0 +1,43 @@
+@import "../../scss/lib/theme/vars";
+
+.history {
+  width: 450px;
+  border: 1px black solid;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  height: 350px;
+  overflow: auto;
+  background: lightblue;
+  color: $white;
+  font-family: cursive;
+
+  h2 {
+    padding: $gutter-sm $gutter-std;
+  }
+
+  span {
+    font-size: 2vw;
+    line-height: 1.5em;
+
+    &:first-child {
+      color: $brand-secondary;
+      font-style: italic;
+    }
+
+    &:last-child {
+      margin-left: .5vw;
+      font-family: $font-secondary;
+    }
+  }
+
+  ul {
+    padding: $gutter-std;
+    margin-bottom: $gutter-std;
+    border-top: solid 1px $brand-secondary;
+
+    li {
+      margin-bottom: $gutter-sm;
+    }
+  }
+}
