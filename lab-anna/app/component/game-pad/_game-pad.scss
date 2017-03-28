@@ -8,9 +8,14 @@
   label {
     display: inline-block;
     font-size: 2vw;
+    float: left;
+    margin-left: $gutter-std;
+    margin-top: 3vh;
+    outline: 1px solid pink;
   }
 
   button {
+    outline: 1px solid pink;
     font-family: $font-secondary;
     font-size: 1.2vw;
     text-align: center;
