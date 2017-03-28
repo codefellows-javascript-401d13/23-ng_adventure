@@ -1,0 +1,15 @@
+.history {
+  padding: 1.5em;
+  background-color: $site-secondary;
+  div {
+    display: inline-block;
+    padding: 1em;
+    font-size: 1.5em;
+    color: $white;
+
+    &:first-child{
+      width: 72%;
+    }
+  }
+
+}

@@ -1,3 +1,11 @@
-body {
-  background: green;
-}
+// base
+@import "lib/base/reset";
+@import "lib/base/base";
+// layout
+@import "lib/layout/header";
+@import "lib/layout/footer";
+@import "lib/layout/content";
+// components
+@import "../component/game-pad/game-pad";
+@import "../component/game-history/game-history";
+@import "../component/player-info/player-info";

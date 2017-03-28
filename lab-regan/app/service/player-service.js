@@ -15,6 +15,7 @@ function playerService($q, $log, mapService){
   let player = service.player = {
     name: 'Ratty',
     location: 'street',
+    // location: mapService.name,
     health: 20,
     cash: 5
   };
@@ -35,7 +36,6 @@ function playerService($q, $log, mapService){
 
       let current = player.location;
       let newLocation = mapService.mapData[current][direction];
-
       if(!newLocation){
         history.unshift({
           move,
@@ -57,6 +57,7 @@ function playerService($q, $log, mapService){
       });
 
       player.location = newLocation;
+
       return resolve(player.location);
     });
   };

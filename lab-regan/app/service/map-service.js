@@ -16,7 +16,8 @@ function mapService($log){
         down: 'pub'
       },
       pub: {
-        desc: 'You\ve found the local rat pub, stay for a brew if you\'d like',
+        desc: 'You\'ve found the local rat pub, stay for a brew if you\'d like',
+        name: 'pub',
         north: 'gym',
         east: 'fortuneTeller',
         up: 'street'
@@ -27,13 +28,13 @@ function mapService($log){
         east: 'dentist'
       },
       dentist: {
-        desc: 'You have arrived at the dentist\s office',
+        desc: 'You have arrived at the dentist\'s office',
         west: 'gym',
         north: 'pawn shop',
         up: 'dumpster'
       },
       pawnShop: {
-        desc: 'Welcome to the pawn shop',
+        desc: 'Welcome to the pawn shop. Do you have anything to trade?',
         south: 'dentist',
         east: 'cafe'
       },
@@ -44,12 +45,14 @@ function mapService($log){
         south: 'recordStore'
       },
       recordStore: {
-        desc: 'You scurried into a record shop. Care to browse some vinyl?',
+        desc: 'You scurried into a record shop.',
+        name: 'Record Store',
         north: 'cafe',
         west: 'fortuneTeller'
       },
       fortuneTeller: {
-        desc: 'You have entered the Fortune Teller\'s murky office',
+        desc: 'You have entered the fortune teller\'s murky office',
+        name: 'Fortune Teller',
         west: 'pub',
         east: 'recordStore',
         up: 'treasure'

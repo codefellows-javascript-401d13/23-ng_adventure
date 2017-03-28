@@ -1,21 +1,4 @@
 <section class='history'>
-  <h2>Status</h2>
-  <ul ng-repeat='info in gameHistCtrl.history'>
-    <!-- <li>
-      <span>location:</span>
-      <span>{{ info.location }}</span>
-    </li> -->
-    <li>
-      <span>message:</span>
-      <span>{{ info.desc }}</span>
-    </li>
-    <li>
-      <span>move:</span>
-      <span>{{ info.move }}</span>
-    </li>
-    <li>
-      <span>health:</span>
-      <span>{{ info.health }}</span>
-    </li>
-  </ul>
+  <div>{{gameHistCtrl.history[0].desc}}</div>
+  <div>{{gameHistCtrl.history[0].move}}</div>
 </section>
