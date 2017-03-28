@@ -1,0 +1,21 @@
+@import './global-vars';
+
+body{
+  font-family: $fontStack;
+  background-color: $bgColor;
+
+  h2{
+    font-size:$secondaryText;
+    margin-bottom: 5px;
+  }
+
+  div.wrapper{
+    width: 70%;
+    margin: auto;
+  }
+
+  .clearfix{
+    clear:both;
+  }
+
+}

@@ -1,0 +1,79 @@
+
+
+$fontStack: 'Space Mono', monospace;
+$bgColor: #D8D8D8;
+$frameColor: #4A4A4A;
+$reverseTextColor: $frameColor*2;
+$highlightColor:#fff;
+$primaryText: 3vw;
+$secondaryText: 2vw;
+$tertiaryText: 1.5vw;
+$infoBoxMaxHeight: 200px;
+$infoBoxMinHeight: 150px;
+
+@mixin infoBoxSize() {
+  width: 46%;
+  float:left;
+  padding: 1% 1% 2% 1%;
+  border: 1px solid gray;
+  height: 130px;
+  box-sizing: border-box;
+  margin: 1%;
+  position: relative;
+  h2{
+    border-bottom: 2px solid $reverseTextColor;
+    padding: 1%;
+    font-size: $secondaryText;
+
+  }
+  input, button {
+    width: 100%;
+    height: 30px;
+    margin: 2% 0 2% 0;
+    box-sizing: border-box;
+  }
+  button {
+    position: absolute;
+    width: 96%;
+    left:2%;
+    bottom: 5px;
+    font-family: $fontStack;
+    font-size: $tertiaryText;
+    color: $reverseTextColor;
+    background-color: $frameColor;
+    border: 0px solid $reverseTextColor*.9 ;
+    @include rounded(.25em);
+    text-shadow: 0px  -1px 0px rgba(0,0,0,.5);
+    @include box-shadow(0px 4px 0px  $frameColor*.8, 0px 3px 10px rgba(0,0,0,.4), inset 0px 1px 3px rgba(255,255,255,.1), inset 0px 0px 3px rgba(255,255,255,.2));
+
+  }
+  button:focus{
+    @extend button;
+
+  }
+  button:active{
+    background-color: $frameColor*1.2;
+    @include box-shadow(0px 1px 0px  $frameColor*.8, 0px 2px 5px rgba(0,0,0,.4), inset 0px 1px 3px rgba(255,255,255,.1), inset 0px 0px 3px rgba(255,255,255,.2));
+  }
+}
+@mixin radial-gradient($from, $to) {
+  background: -moz-radial-gradient(center, circle cover, $from 0%, $to 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, $from), color-stop(100%, $to));
+  background: -webkit-radial-gradient(center, circle cover, $from 0%, $to 100%);
+  background: -o-radial-gradient(center, circle cover, $from 0%, $to 100%);
+  background: -ms-radial-gradient(center, circle cover, $from 0%, $to 100%);
+  background: radial-gradient(center, circle cover, $from 0%, $to 100%);
+  background-color: $from;
+}
+
+@mixin rounded($radius: 0.5em) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin box-shadow($shadow...) {
+  -webkit-box-shadow: $shadow;
+     -moz-box-shadow: $shadow;
+          box-shadow: $shadow;
+}

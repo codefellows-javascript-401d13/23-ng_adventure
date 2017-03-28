@@ -1,0 +1,29 @@
+<section class="player-info stats" ng-show="playerInfoCtrl.player.nameSet">
+  <h2>stats:</h2>
+{{playerInfoCtrl.playerService}}
+  <ul >
+    <li>
+      <span>name: </span>
+      <span>{{ playerInfoCtrl.player.name }}</span>
+    </li>
+    <li>
+      <span>hp:</span>
+      <span>{{ playerInfoCtrl.player.hp }}</span>
+    </li>
+    <li>
+      <span>location:</span>
+      <span>{{ playerInfoCtrl.player.location }} </span>
+    </li>
+    <li>
+      <span>{{ playerInfoCtrl.history[0].desc }} </span>
+    </li>  </ul>
+
+</section>
+<section class="player-info signup" ng-hide="playerInfoCtrl.player.nameSet">
+  <h2>Enter your name below</h2>
+  <form ng-if="!playerInfoCtrl.player.nameSet" ng-submit="playerInfoCtrl.startGame()">
+  <label for="player-name"></label>
+  <input  name="player-name" ng-model="playerInfoCtrl.player.name" type="text" required>
+  <button type="submit">That's my Name!</button>
+  </form>
+</section>

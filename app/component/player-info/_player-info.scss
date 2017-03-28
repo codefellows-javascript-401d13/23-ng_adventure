@@ -1,0 +1,15 @@
+@import '../../scss/lib/base/global-vars';
+
+section.player-info.stats{
+  @include infoBoxSize;
+
+}
+
+section.player-info.signup{
+  @include infoBoxSize;
+  width: 100%;
+  input, button{
+    margin: 5px 0 5px 0;
+  }
+
+}

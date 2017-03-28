@@ -1,0 +1,9 @@
+<nav class="header-bar">
+  <span>{{ headerBarCtrl.title }}</span>
+  <ul>
+    <li ng-repeat="route in headerBarCtrl.routes">
+      <a href="{{ route.url }}">{{ route.name }}</a>
+    </li>
+  </ul>
+  <div class="clearfix"></div>
+</nav>

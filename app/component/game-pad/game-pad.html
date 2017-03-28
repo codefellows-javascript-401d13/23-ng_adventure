@@ -1,0 +1,11 @@
+<section class="game-pad" ng-hide="!gamePadCtrl.player.nameSet">
+  <h2>controls</h2>
+  <form name="gamePad" novalidate ng-submit="gamePadCtrl.movePlayer()">
+    <label for="directions">Direction</label>
+    <select ng-model="gamePadCtrl.moveDirection">
+      <option ng-repeat="direction in gamePadCtrl.directions">{{ direction }}</option>
+    </select>
+
+    <button type="submit">Move it!</button>
+  </form>
+</section>
