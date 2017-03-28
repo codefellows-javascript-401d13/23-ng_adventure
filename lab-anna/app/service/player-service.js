@@ -11,7 +11,7 @@ function playerService($q, $log, mapService) {
   let service = {};
 
   let turn = 0;
-  let player = service.player = {
+  let player = service.player = { 
     name: 'spider',
     location: 'web',
     hp: 16,
