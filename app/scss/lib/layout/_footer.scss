@@ -8,4 +8,8 @@ footer {
   background: $grey;
   color: $light-grey;
   text-align: center;
+
+  span {
+    padding-top: $gutter;
+  }
 }

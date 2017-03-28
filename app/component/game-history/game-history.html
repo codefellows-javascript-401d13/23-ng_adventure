@@ -2,17 +2,22 @@
   <h2>history</h2>
 
   <ul ng-repeat="stat in gameHistoryCtrl.history">
+
+    </br>
     <li>
-      <span>turn:</span>
-      <span>{{ stat.turn }}</span>
+      <span>:::::</span>
+      <span>{{ stat.story }}</span>
     </li>
+    </br>
     <li>
-      <span>location:</span>
-      <span>{{ stat.location }}</span>
-    </li>
-    <li>
-      <span>description:</span>
+      <span>He looks around:</span>
       <span>{{ stat.desc }}</span>
     </li>
+    </br>
+    <li>
+      <span>rooms visited:</span>
+      <span>{{ stat.turn }}</span>
+    </li>
+  </br>
   </ul>
 </section>
