@@ -1,0 +1,10 @@
+footer{
+  height: 100px;
+  background-color: $brand-primary;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  span{
+    font-size: 3em;
+  }
+}
