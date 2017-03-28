@@ -1,6 +1,7 @@
 @import "../../scss/lib/theme/vars";
 
 .player-info {
+  outline: 1px solid blue;
   margin-bottom: $gutter-sm;
   li {
     margin-bottom: $gutter-sm / 2;

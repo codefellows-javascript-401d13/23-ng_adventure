@@ -27,7 +27,8 @@ module.exports = {
         loader: ExtractTextPlugin.extract(['css-loader', 'sass-loader'])
       },
       {
-        test: /\.html$/, loader: 'html-loader'
+        test: /\.html$/,
+        loader: 'html-loader'
       },
       {
         test: /\.(png|jpg)$/,

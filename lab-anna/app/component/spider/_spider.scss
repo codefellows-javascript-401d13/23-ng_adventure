@@ -1,7 +1,6 @@
 @import "../../scss/lib/theme/vars";
 
 .spider {
-  // outline: 1px solid green;
   width: 5vw;
   display: block;
   position: absolute;
@@ -12,6 +11,7 @@
 }
 
 .wall {
+  outline: 1px solid green;
   width: 37vw;
   float: left;
   display: block;
