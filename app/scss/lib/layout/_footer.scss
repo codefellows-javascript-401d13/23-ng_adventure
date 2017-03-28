@@ -1,0 +1,15 @@
+@import "../theme/vars";
+
+footer {
+  position: absolute;
+  top: 60vw;
+  height: 10vw;
+  width: 100%;
+  background: $grey;
+  color: $light-grey;
+  text-align: center;
+
+  span {
+    padding-top: $gutter;
+  }
+}

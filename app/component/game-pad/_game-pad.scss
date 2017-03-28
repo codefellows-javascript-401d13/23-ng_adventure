@@ -1,0 +1,10 @@
+@import "../../scss/lib/theme/vars";
+
+.gamepad {
+  position: absolute;
+  display: inline-block;
+  left: 70%;
+  top: 10vw;
+  width: 20%;
+  margin: $gutter;
+}
