@@ -1,0 +1,18 @@
+h1{
+  font-size: 5vw;
+}
+
+body{
+  font-family: helvetica;
+}
+
+button{
+  border-radius: 5px;
+  background-color: $brand-primary;
+  color: $black;
+  transition: 350ms all;
+  &:hover{
+    background-color: $brand-secondary;
+    color: white;
+  }
+}
