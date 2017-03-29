@@ -1,0 +1,9 @@
+.player-info {
+  li, ul, h2 {
+    display: inline-block;
+  }
+
+  margin-bottom: 2vw;
+  font-size: $fontSize * 1.2;
+  color: yellow;
+}

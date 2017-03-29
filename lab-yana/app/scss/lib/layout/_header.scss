@@ -1,0 +1,9 @@
+@import '../theme/vars';
+
+header {
+  font-style: bold;
+  font-style: italic;
+  font-size: $fontSize * 2;
+  margin-bottom: $margin;
+  margin-left: $margin * 5;
+}
