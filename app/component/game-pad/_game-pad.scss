@@ -3,9 +3,12 @@
 .gamepad {
   label {
     display: block;
+    align-content: center;
     margin-bottom: 1vw;
     font-size: 3vw;
     font-style: italic;
+    border: 1px solid $brand-primary;
+    color: $black;
   }
 
   button {

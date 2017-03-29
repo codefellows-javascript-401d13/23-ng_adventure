@@ -5,14 +5,17 @@
   overflow: auto;
   background: $brand-primary;
   color: $black;
+  text-align: center;
 
   h2 {
     padding: $gutter-sm $gutter-std;
+      text-shadow: 4px white;
   }
 
   span {
     font-size: 2vw;
     line-height: 1.5em;
+
 
     &:first-child {
       color: $brand-secondary;
