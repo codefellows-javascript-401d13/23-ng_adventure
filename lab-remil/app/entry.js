@@ -2,6 +2,12 @@
 
 import './scss/main.scss';
 
-import 'angular';
+import angular from 'angular';
+angular.module('findyokeys', []);
 
-angular.module('swagyoselfApp', []); // eslint-disable-line
+require('./service/map-service.js');
+require('./service/playa-service.js');
+
+require('./component/gamepad/gamepad.js');
+require('./component/player/player.js');
+require('./component/history/history.js');

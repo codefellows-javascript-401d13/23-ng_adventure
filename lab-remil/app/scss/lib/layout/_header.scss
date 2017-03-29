@@ -1,0 +1,13 @@
+@import '../theme/vars';
+
+$header-font-size: 6vh;
+
+header {
+  height: $height-header;
+  background: $black;
+  color: $white;
+
+  h1 {
+    font-size: $header-font-size;
+  }
+}
