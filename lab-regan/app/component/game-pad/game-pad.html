@@ -1,0 +1,7 @@
+<section class='gamepad'>
+  <form ng-submit='gamePadCtrl.movePlayer((gamePadCtrl.text))' name='gamepad' novalidate>
+    <label for="direction">Which direction would you like to go?</label>
+    <input type="text" class='userInput' placeholder="north,south,east,west,up,down" ng-model='gamePadCtrl.text'>
+    <button ng-click='submit' data-ng-click="gamePadCtrl.clearField()">scurry!</button>
+  </form>
+</section>

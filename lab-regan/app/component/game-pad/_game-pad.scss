@@ -1,0 +1,17 @@
+
+  .gamepad {
+    padding: 1.5em;
+    background: $site-secondary;
+    label {
+      padding: 1em;
+      font-size: 1em;
+      color: #eee;
+    }
+    input[type='text'] {
+      font-size: 0.5em;
+      border-radius: 3px;
+      padding: 1.5em 15em;
+      text-align: left;
+      width: 40%;
+    }
+  }
