@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="ngAdventure">
+  <head>
+    <title>Dark Dead School Adventure</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Jim+Nightshade" rel="stylesheet">
+  </head>
+  <body>
+
+</div>
+    <header>
+      <div ng-init="myVar = 'app/zombiegirl.jpg'">
+      <h1>Welcome to The</h1>
+      <img ng-src="{{myVar}}">
+      <h1>School of The Dark & Dead</h1>
+    </header>
+
+    <main>
+      <!--components go here -->
+      <game-pad></game-pad>
+      <player-info></player-info>
+      <game-history></game-history>
+    </main>
+    <footer>
+      <span>&copy;Zombie School Adventure</span>
+    </footer>
+  </body>

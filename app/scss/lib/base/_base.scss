@@ -1,0 +1,13 @@
+@import "../theme/vars";
+
+body{
+  background: black;
+  font-family: $mainfont;
+  font-size: 2vw;
+  color: $bluedream;
+  text-align: center;
+  text-decoration: none;
+  width:80%;
+  min-height: 800px;
+  margin: 5% 10%;
+}
