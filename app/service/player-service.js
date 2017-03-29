@@ -12,16 +12,17 @@ function playerService($q, $log, mapService){
 
   let turn = 0;
   let player = service.player = {
-    name: 'mega',
+    name: 'Fresh Meat',
     location: 'closet',
     hp: 16,
+    yourName: false
 
   };
 
   let history = service.history = [
     {
       turn,
-      desc: 'Welcome to zombie school adventure',
+      desc: 'You just got bit by a zombie...get to the lunchroom then get outside to escape!',
       location: player.location,
       hp: player.hp
     }
@@ -33,24 +34,27 @@ function playerService($q, $log, mapService){
 
       let current = player.location;
       let newLocation = mapService.mapData[current][direction];
-      player.location = newLocation;
+       
+      // player.location = newLocation;
       if (!newLocation){
         history.unshift({
           turn,
           desc: 'you have hit a wall and a something is closing in on you!!!',
           location: player.location,
-          hp: player.hp
+          hp: --player.hp
         });
-        return reject('no room in that direction');
+        return reject('nowhere to hide here');
       }
-
+      
       history.unshift({
         turn,
-        location: player.location,
+        // location: player.location,
         desc: mapService.mapData[newLocation].desc,
-        hp:player.hp
+        hp: --player.hp
       });
-
+      
+      player.location= newLocation;
+      player.display = mapService.mapData[newLocation].display;
 
       return resolve(player.location);
     });

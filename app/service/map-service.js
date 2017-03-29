@@ -15,22 +15,20 @@ function mapService($log) {
       desc: 'Get out of this closet',
       north: 'hallway',
       south: 'closet',
-      east: 'closet',
-      west: 'closet'
+
     },
     hallway: {
       desc: 'You are in the dark school hallway.  Find your way out of this school',
       north: 'auditorium',
       east: 'gym',
       south: 'closet',
-      west: 'lunchroom'
+
     },
     auditorium: {
       desc: 'You are in the the dark abandoned auditorium.  Find your way out of this creepy place',
       south: 'hallway',
       east: 'office',
-      west: 'auditorium',
-      north: 'auditorium'
+
     },
     office: {
       desc: 'You see a zombie principal in the office, GET OUT!',
@@ -43,8 +41,6 @@ function mapService($log) {
       desc: 'Zombie P.E. students run toward you.  These athletic zombies are moving fast! Leave the gym quickly',
       west: 'hallway',
       east: 'playground',
-      north: 'gym',
-      south: 'gym'
     },
     playground:{
       desc: 'your on the playground where there is a little girl wearing bloody clothes sitting on the swing with her head down...she notices you',
@@ -54,35 +50,36 @@ function mapService($log) {
       north: 'swingset'
     },
     swingset:{
-      desc: 'you got too close! the little girl bites you with her jagged zombie teeth and digs her nails into your back!',
+      desc: 'you got too close! the little girl bites you with her jagged zombie teeth.  Get to the luchroom!',
       south: 'ground',
       north: 'corridor',
       west: 'playground',
       east: 'sandbox'
     },
     sandbox:{
-      desc: 'you are stuck',
+      desc: 'You are stuck. Zombies get you. GAME OVER',
       south: 'sandbox',
       north: 'sandbox',
-      west: 'sandbox',
-      east: 'sandbox'
+      east: 'sandbox',
+      west: 'sandbox'
+
     },
     ground:{
-      desc: 'your on the ground wrestling the zombie girl to get her off of you. You have several zombie bites.  It may be too late if you cant get to the lunchroom in two moves',
+      desc: 'She jumps on you! Your on the ground wrestling the zombie girl to get her off of you. You have several zombie bites.  It may be too late if you cant get to the lunchroom fast enough',
       north: 'swingset',
       south: 'sandbox',
       east: 'playground',
       west:'corridor',
     },
     corridor: {
-      desc: '',
+      desc: 'You are in a dark corridor',
       north: 'playground',
       east: 'lunchroom',
       west: 'office',
       south: 'lunchroom'
     },
     lunchroom: {
-      desc: 'you have eaten some cool snacks and your not going to be a zombie...maybe',
+      desc: 'You have eaten some cool snacks but You need to get outside before its to late and you befome a zombie',
       west: 'corridor',
       east: 'hallway',
       north: 'outside',
