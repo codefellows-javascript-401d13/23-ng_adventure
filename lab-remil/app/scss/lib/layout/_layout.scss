@@ -1,0 +1,18 @@
+@import '../theme/vars';
+
+body * {
+  box-sizing: border-box;
+}
+
+section {
+  margin-top: $gutter-std;
+
+  h2 {
+    text-align: center;
+    color: $color-secondary;
+  }
+}
+
+.clearfix {
+  clear: both;
+}

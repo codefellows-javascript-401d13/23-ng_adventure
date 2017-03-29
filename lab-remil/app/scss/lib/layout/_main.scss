@@ -1,0 +1,7 @@
+@import '../theme/vars';
+
+main {
+  width: 70%;
+  margin: 0 auto;
+  height: 100vh - ( $height-header * 1.8 );
+}

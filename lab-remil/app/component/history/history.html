@@ -1,0 +1,17 @@
+<section class="history">
+  <h2>Time Machine</h2>
+  <ul ng-repeat="stat in historyCtrl.history">
+    <li>
+      <span>Minute:</span>
+      <span>{{ stat.minute }}</span>
+    </li>
+    <li>
+      <span>Location:</span>
+      <span>{{ stat.location }}</span>
+    </li>
+    <li>
+      <span>Description:</span>
+      <span>{{ stat.msg }}</span>
+    </li>
+  </ul>
+</section>
