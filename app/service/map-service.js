@@ -12,35 +12,35 @@ function mapService($log) {
 
   service.mapData = {
     closet: {
-      desc: 'get out of this closet',
+      desc: 'Get out of this closet',
       north: 'hallway',
       south: 'closet',
       east: 'closet',
       west: 'closet'
     },
     hallway: {
-      desc: 'you are in the dark school hallway.  find your way out of this school',
+      desc: 'You are in the dark school hallway.  Find your way out of this school',
       north: 'auditorium',
       east: 'gym',
       south: 'closet',
       west: 'lunchroom'
     },
     auditorium: {
-      desc: 'you are in the the dark abandoned auditorium',
+      desc: 'You are in the the dark abandoned auditorium.  Find your way out of this creepy place',
       south: 'hallway',
       east: 'office',
       west: 'auditorium',
       north: 'auditorium'
     },
     office: {
-      desc: 'you see a zombie principal in the office, GET OUT!',
+      desc: 'You see a zombie principal in the office, GET OUT!',
       west: 'auditorium',
       east: 'office',
       south: 'office',
       north: 'office'
     },
     gym: {
-      desc: 'zombie P.E. students run toward you chanting ring around the rosies!',
+      desc: 'Zombie P.E. students run toward you.  These athletic zombies are moving fast! Leave the gym quickly',
       west: 'hallway',
       east: 'playground',
       north: 'gym',
