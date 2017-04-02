@@ -7,5 +7,7 @@
 @import "lib/layout/footer";
 @import "lib/layout/header";
 
-// :: THEME :: //
-@import "lib/theme/vars";
+// :: COMPONENTS :: //
+@import "../component/game-pad/game-pad";
+@import "../component/player-info/player-info";
+@import "../component/game-history/game-history";

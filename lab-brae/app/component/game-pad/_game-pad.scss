@@ -1,0 +1,17 @@
+@import "../../scss/lib/theme/vars";
+
+.gamepad {
+  label {
+    display: block;
+    margin-bottom: 1vw;
+    font-size: 2vw;
+  }
+
+  button {
+    width: 20%;
+    color: $black;
+    margin-bottom: 2vw;
+    margin-left: 2vw;
+  }
+}
+

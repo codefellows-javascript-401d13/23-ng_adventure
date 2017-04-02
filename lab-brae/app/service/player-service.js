@@ -10,12 +10,11 @@ function playerService($q, $log, mapService) {
 
   let service = {};
   let name = prompt('what is your name?');
-
+  
   let turn = 0;
   let player = service.player = {
     name: name,
     location: 'house',
-    hp: 10
   };
 
   let history = service.history = [
@@ -23,7 +22,6 @@ function playerService($q, $log, mapService) {
       turn,
       desc: 'Welcome',
       location: player.location,
-      hp: player.hp
     }
   ];
 
@@ -39,7 +37,6 @@ function playerService($q, $log, mapService) {
           turn,
           desc: 'you can\'t go this way',
           location: player.location,
-          hp: player.hp
         });
         return reject('nothing to see here');
       };
@@ -48,7 +45,6 @@ function playerService($q, $log, mapService) {
         turn,
         location: player.location,
         desc: mapService.mapData[newLocation].desc,
-        hp: player.hp
       });
 
       player.location = newLocation;
