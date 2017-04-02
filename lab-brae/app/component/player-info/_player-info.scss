@@ -1,0 +1,14 @@
+@import "../../scss/lib/theme/vars";
+
+.player-info {
+  border: solid 2px #444;
+  padding: 5%;
+
+  li {
+    margin-bottom: 5%;
+
+    span {
+      font-size: 2vw;
+    }
+  }
+}
